@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>Averment</title>
+  <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--<![endif]-->  
+  <style>
+    /* Client-specific Styles */
+    #outlook a {
+      padding: 0;
+    }
+
+    /* Force Outlook to provide a "view in browser" menu link. */
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+    .ExternalClass {
+      width: 100%;
+    }
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing.  */
+    #backgroundTable {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      line-height: 100% !important;
+      background-color: #f1f1f1 !important;
+    }
+
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .image_fix {
+      display: block;
+    }
+
+    p {
+      margin: 0px 0px !important;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    a {
+      color: #0ed8c8;
+      text-decoration: underline;
+    }
+
+    .device-width, table[class=device-width] {
+      width: 100% !important;
+      max-width: 600px !important;
+    }
+
+    .device-width-half {
+      width: 50% !important;
+      max-width: 270px !important;
+    }
+
+    .email-footer-address a {
+      color: #ffffff;
+    }
+
+    .learn-more a {
+      color: #03103A;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 400;
+      mso-font-alt: 'Arial';
+      src: url(https://averment.digital/webFonts/GilroyRegular/font.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      mso-font-alt: 'Arial';
+      src: url(https://averment.digital/webFonts/GilroyMedium/font.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      mso-font-alt: 'Arial';
+      src: url(https://averment.digital/webFonts/GilroyBold/font.woff2) format('woff2');
+    }
+
+    /* Shows Dark Mode-Only Content, Like Images */
+    [data-ogsc] .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+    
+    /* Hides Light Mode-Only Content, Like Images */
+    [data-ogsc] .light-img { display:none; display:none !important; }
+
+    /* Custom Dark Mode Background Color */
+    [data-ogsc] .darkmode { background-color: #03103a !important; }
+
+    [data-ogsc] .darkmode-footer { background-color: #f6f6f6 !important }
+
+    [data-ogsc] .darkmode-footer p, [data-ogsc] .darkmode-footer a, [data-ogsc] .darkmode-footer span { color: #000000 !important }
+    
+    /* Custom Dark Mode Font Colors */
+    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] h3, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a, [data-ogsc] b, [data-ogsc] td, [data-ogsc] .text, [data-ogsc] .learn-more a { color: #ffffff !important; }
+      
+    /* Custom Dark Mode Text Link Color */
+    [data-ogsc] .link, [data-ogsc] .webversion a { color: #0ed8c8 !important; }
+  </style>
+
+  <style>
+    @media only screen and (max-width: 480px) {
+      .email-heading {
+        font-size: 22px !important;
+        line-height: 34px !important;
+      } 
+      
+      .subheading {
+        font-size: 18px !important;
+        line-height: 30px !important;
+      } 
+
+      .subsubheading {
+        font-size: 16px !important;
+        line-height: 28px !important;
+      } 
+
+      .device-width-half {
+        width: 100% !important;
+        max-width: 420px !important;
+        min-width: 100% !important;
+      }
+
+      .two-col-container {
+        padding: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .email-text-area {
+        font-size: 14px !important;
+        line-height: 28px !important;
+      }
+    }    
+  </style>
+
+  <style>
+    @media (prefers-color-scheme: dark ) {
+      /* Shows Dark Mode-Only Content, Like Images */
+      .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+
+      /* Hides Light Mode-Only Content, Like Images */
+      .light-img { display:none; display:none !important; }
+
+      /* Custom Dark Mode Background Color */
+      .darkmode { background-color: #03103a !important; }
+
+      .darkmode-footer { background-color: #f6f6f6 !important; }
+
+      .darkmode-footer p, .darkmode-footer a, .darkmode-footer span { color: #000000 !important }
+
+      /* Custom Dark Mode Font Colors */
+      h1, h2, h3, p, span, a, b, td, .text, .learn-more a { color: #ffffff !important; }
+      
+      /* Custom Dark Mode Text Link Color */
+      .link, .webversion a { color: #0ed8c8 !important; }
+    }
+  </style>
+</head>
+
+<body bgcolor="#f1f1f1" style="margin:0; padding:0; word-spacing:normal; background-color: #f1f1f1 !important;">
+
+  <!-- Start of webversion -->
+  <table 
+    width="100%" 
+    bgcolor="#f1f1f1" 
+    cellpadding="10" 
+    cellspacing="0" 
+    border="0" 
+    id="backgroundTable">
+    <tbody>
+      <tr>
+        <td 
+          align="center" 
+          valign="middle">
+            <div class="webversion" style="font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: 400; font-size: 14px; line-height: 28px; color: #03103A;">
+              Problems viewing this email?&nbsp;<webversion>View it in your browser.</webversion>
+            </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- End of webversion -->
+
+  <!-- Start of LOGO -->
+  <table width="100%" bgcolor="#f1f1f1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+    <tbody>
+      <tr>
+        <td>
+          <table 
+            bgcolor="#ffffff" 
+            style="width: 100% !important; max-width: 600px !important;" 
+            width="600" 
+            align="center" 
+            cellspacing="0" 
+            cellpadding="30" 
+            border="0" 
+            class="device-width darkmode">
+            <tbody>
+              <tr>
+                <!-- start of image -->
+                <td align="center" valign="center">
+                  <a target="_blank" href="https://www.averment.digital">
+                    <img 
+                      width="150" 
+                      alt="Averment Digital Ltd." 
+                      border="0"
+                      style="display:block; border:none; outline:none; text-decoration:none; width: 150px !important;" 
+                      src="images/logo.png"
+                      class="logo light-img" />
+                    <!--[if !mso]><! -->
+                      <img 
+                        width="150" 
+                        alt="Averment Digital Ltd." 
+                        border="0"
+                        style="display:none; border:none; outline:none; text-decoration:none; width: 150px !important;" 
+                        src="images/logo-dark-mode.png"
+                        class="logo dark-img" /> 
+                    <!--<![endif]-->
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- end of image -->
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table
+           bgcolor="#ffffff" 
+           style="width: 100% !important; max-width: 600px !important;" 
+           width="600" 
+           align="center" 
+           cellspacing="0" 
+           cellpadding="0" 
+           border="0" 
+           class="device-width darkmode">
+            <tbody>
+              <tr>
+                <td height="1" bgcolor="#f1f1f1" style="background-color: #f1f1f1; font-size: 1px; line-height: 1px;">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- End of LOGO -->
+
+  <!-- Start of Header -->
+  <table 
+    width="100%" 
+    bgcolor="#f1f1f1" 
+    cellpadding="0" 
+    cellspacing="0" 
+    border="0" 
+    id="backgroundTable">
+    <tbody>
+      <tr>
+        <td>
+          <table 
+            style="width: 100% !important; max-width: 600px !important;" 
+            width="600" 
+            bgcolor="#ffffff" 
+            cellpadding="30" 
+            cellspacing="0" 
+            border="0" 
+            align="center" 
+            class="device-width darkmode">
+            <tbody>
+              <tr>
+                <td 
+                  align="center" 
+                  valign="center">
+                  <h1 
+                    class="email-heading"
+                    style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: bold; font-size: 30px; line-height: 42px; color: #03103A;">
+                    <singleline label="Headline">Marketing success season continues with new events, tools and more</singleline>
+                  </h1>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- End of Header -->
+
+  <!-- Start of Banner -->
+  <table 
+    width="100%" 
+    bgcolor="#f1f1f1" 
+    cellpadding="0" 
+    cellspacing="0" 
+    border="0" 
+    id="backgroundTable">
+    <tbody>
+      <tr>
+        <td>
+          <table 
+            style="width: 100% !important; max-width: 600px !important;" 
+            width="600" 
+            bgcolor="#ffffff" 
+            cellpadding="0" 
+            cellspacing="0" 
+            border="0" 
+            align="center" 
+            class="device-width darkmode">
+            <tbody>
+              <tr>
+                <td width="30px">&nbsp;</td>
+                <td 
+                  align="center" 
+                  valign="center">
+                  <img 
+                    editable="true" 
+                    src="images/banner.png" 
+                    width="540" 
+                    alt="A photo of Phillip Whitaker hosting a meeting at Averment Digital Ltd." 
+                    style="display: block; width: 540px; height: auto; max-width: 100%;" />
+                </td>
+                <td width="30px">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- End of Banner -->
+
+  <!-- Start of Subheading Text Area-->
+  <table 
+    width="100%" 
+    bgcolor="#f1f1f1" 
+    cellpadding="0" 
+    cellspacing="0" 
+    border="0" 
+    id="backgroundTable">
+    <tbody>
+      <tr>
+        <td>
+          <table 
+            style="width: 100% !important; max-width: 600px !important;" 
+            width="600" 
+            bgcolor="#ffffff" 
+            cellpadding="30" 
+            cellspacing="0" 
+            border="0" 
+            align="center" 
+            class="device-width darkmode">
+            <tbody>
+              <tr>
+                <td 
+                  align="center" 
+                  valign="center">
+                  <h2 
+                    class="subheading"
+                    style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color: #03103A;">
+                    <singleline label="Headline">Subheading 2</singleline>
+                  </h2>
+                  <br />
+                  <div 
+                    class="email-text-area text"
+                    style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: 400; font-size: 16px; line-height: 30px; color: #707070;">
+                    <multiline label="text-area">
+                      Vivamus sagittis lacus vel augue <strong>laoreet</strong> rutrum faucibus dolor auctor. Vestibulum id ligula <a style="color: #0A7B71;" class="link" href="#">porta felis euismod semper.</a> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </multiline>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- End of Subheading Text Area -->
+
+  <!-- Start of 2-columns -->
+  <repeater>
+    <table 
+    width="100%" 
+    bgcolor="#f1f1f1" 
+    cellpadding="0" 
+    cellspacing="0" 
+    border="0" 
+    id="backgroundTable">
+    <tbody>
+      <tr>
+        <td>
+          <table 
+            style="width: 100% !important; max-width: 600px !important;" 
+            width="600" 
+            bgcolor="#ffffff" 
+            cellpadding="0" 
+            cellspacing="0" 
+            border="0" 
+            align="center" 
+            class="device-width darkmode">
+                  <tbody>
+                    <tr>
+                        <td width="100%">
+                          <table 
+                          style="width: 100% !important; max-width: 600px !important;" 
+                          width="600" 
+                          bgcolor="#ffffff" 
+                          cellpadding="0" 
+                          cellspacing="0" 
+                          border="0" 
+                          align="center" 
+                          class="device-width darkmode">
+                              <tbody>
+                                <tr>
+                                    <td style="padding-left: 30px; padding-right: 30px;">
+                                      <table width="540" style="width: 100% !important; max-width: 540px !important;" align="center" cellpadding="0" cellspacing="0" border="0">
+                                          <tbody>
+                                            <!-- Subheading -->
+                                            <tr>
+                                                <td align="left" valign="center">
+                                                  <h2 
+                                                    class="subheading"
+                                                    style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color: #03103A;">
+                                                    <singleline label="Headline">Subheading 2</singleline>
+                                                  </h2>
+                                                </td>
+                                            </tr>
+                                            <!-- End of Subheading -->
+                                            <tr>
+                                              <td 
+                                                align="left" 
+                                                valign="center"
+                                                height="10px"
+                                                style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                            </tr>
+                                          </tbody>
+                                      </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                  <td style="padding-left: 30px; padding-right: 30px;">
+                                    <table width="540" style="width: 100% !important; max-width: 540px !important;" valign="top" align="center" cellpadding="0" cellspacing="0" border="0">
+                                        <tbody>
+                                          <tr>
+                                              <td align="left" valign="top">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                <table width="540" cellpadding="0" cellspacing="0" border="0" valign="top" align="center" style="width: 100% !important; max-width: 540px !important;" align="center">
+                                                  <tr>
+                                                    <td width="270">
+                                                <![endif]-->
+                                                      <table 
+                                                        width="270" 
+                                                        align="left" 
+                                                        valign="top"
+                                                        border="0" 
+                                                        cellpadding="0" 
+                                                        cellspacing="0" 
+                                                        class="device-width-half">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td
+                                                                align="left" 
+                                                                valign="top" 
+                                                                class="two-col-container" 
+                                                                style="padding-right: 15px;">
+                                                                <table
+                                                                  width="100%"
+                                                                  border="0"
+                                                                  align="left" 
+                                                                  valign="top" 
+                                                                  cellpadding="0" 
+                                                                  cellspacing="0">
+                                                                    <tbody>
+                                                                      <!-- image -->
+                                                                      <tr>
+                                                                        <td valign="top" align="center">
+                                                                            <img editable="true" src="images/placeholder.png" alt="" border="0" width="255" style="display: block; width: 100%; height: auto; max-width: 100%; outline:none; text-decoration:none;" class="colimg2">
+                                                                        </td>
+                                                                      </tr>
+                                                                      <!-- Spacing -->
+                                                                      <tr>
+                                                                        <td width="100%" height="10"></td>
+                                                                      </tr>
+                                                                      <!-- /Spacing -->
+                                                                      <!-- title -->
+                                                                      <tr>
+                                                                        <td>
+                                                                          <h3 
+                                                                            class="subsubheading"
+                                                                            style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: bold; font-size: 18px; line-height: 30px; color: #03103A;">
+                                                                            <singleline label="Headline">Subheading 3</singleline>
+                                                                          </h3>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <!-- end of title -->
+                                                                      <!-- text -->
+                                                                      <tr>
+                                                                        <td>
+                                                                          <div 
+                                                                            class="text"
+                                                                            style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: normal; font-size: 14px; line-height: 28px; color: #707070;">
+                                                                            <multiline label="Input">BBVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula</multiline>
+                                                                          </div>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <!-- end of text -->
+                                                                      <!-- Spacing -->
+                                                                      <tr>
+                                                                        <td width="100%" height="10"></td>
+                                                                      </tr>
+                                                                      <!-- /Spacing -->
+                                                                      <!-- text -->
+                                                                      <tr>
+                                                                        <td align="right">
+                                                                          <p 
+                                                                            class="learn-more"
+                                                                            style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: bold; font-size: 16px; line-height: 30px; text-transform: uppercase; color: #03103A;">
+                                                                            <singleline label="Button">Learn more</singleline>
+                                                                          </p>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <!-- end of text -->
+                                                                      <!-- Spacing -->
+                                                                      <tr>
+                                                                        <td width="100%" height="30"></td>
+                                                                      </tr>
+                                                                      <!-- /Spacing -->
+                                                                    </tbody>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                      </table>
+                                                      <!-- end of left column -->
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    <td width="270">
+                                                <![endif]-->
+                                                      <!-- start of right column -->
+                                                      <table 
+                                                        width="270" 
+                                                        align="right" 
+                                                        valign="top"
+                                                        border="0" 
+                                                        cellpadding="0" 
+                                                        cellspacing="0" 
+                                                        class="device-width-half">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td
+                                                                align="left" 
+                                                                valign="top" 
+                                                                class="two-col-container" 
+                                                                style="padding-left: 15px;">
+                                                              <table
+                                                                width="100%"
+                                                                border="0"
+                                                                align="left" 
+                                                                valign="top" 
+                                                                cellpadding="0" 
+                                                                cellspacing="0">
+                                                                  <tbody>
+                                                                    <!-- image -->
+                                                                    <tr>
+                                                                      <td valign="top" align="center">
+                                                                          <img editable="true" src="images/placeholder.png" alt="" border="0" width="255" style="display: block; width: 100%; height: auto; max-width: 100%; outline:none; text-decoration:none;" class="colimg2">
+                                                                      </td>
+                                                                    </tr>
+                                                                    <!-- Spacing -->
+                                                                    <tr>
+                                                                      <td width="100%" height="10"></td>
+                                                                    </tr>
+                                                                    <!-- /Spacing -->
+                                                                    <!-- title -->
+                                                                    <tr>
+                                                                      <td>
+                                                                        <h3 
+                                                                          class="subsubheading"
+                                                                          style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: bold; font-size: 18px; line-height: 30px; color: #03103A;">
+                                                                          <singleline label="Headline">Subheading 3</singleline>
+                                                                        </h3>
+                                                                      </td>
+                                                                    </tr>
+                                                                    <!-- end of title -->
+                                                                    <!-- text -->
+                                                                    <tr>
+                                                                      <td>
+                                                                        <div 
+                                                                          class="text"
+                                                                          style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: normal; font-size: 14px; line-height: 28px; color: #707070;">
+                                                                          <multiline label="Input">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula</multiline>
+                                                                      </div>
+                                                                      </td>
+                                                                    </tr>
+                                                                    <!-- end of text -->
+                                                                    <!-- Spacing -->
+                                                                    <tr>
+                                                                      <td width="100%" height="10"></td>
+                                                                    </tr>
+                                                                    <!-- /Spacing -->
+                                                                    <!-- text -->
+                                                                    <tr>
+                                                                      <td align="right">
+                                                                        <p 
+                                                                          class="learn-more"
+                                                                          style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: bold; font-size: 16px; line-height: 30px; text-transform: uppercase; color: #03103A;">
+                                                                          <singleline label="Button">Learn more</singleline>
+                                                                        </p>
+                                                                      </td>
+                                                                    </tr>
+                                                                    <!-- end of text -->
+                                                                    <!-- Spacing -->
+                                                                    <tr>
+                                                                      <td width="100%" height="30"></td>
+                                                                    </tr>
+                                                                    <!-- /Spacing -->
+                                                                  </tbody>
+                                                              </table>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                      <!-- end of right column -->
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                                <![endif]-->
+                                              </td>
+                                          </tr>
+                                    </tbody>
+                                  </td>
+                                </tr>
+                              </tbody>
+                          </table>
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- End of 2-columns -->
+  </repeater>
+
+  <!-- Start of Footer -->
+  <table 
+    width="100%" 
+    bgcolor="#f1f1f1" 
+    cellpadding="0" 
+    cellspacing="0" 
+    border="0" 
+    id="backgroundTable">
+    <tbody>
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" 
+            style="width: 100% !important; max-width: 600px !important;" 
+            width="600" 
+            bgcolor="#03103A" 
+            cellpadding="0" 
+            cellspacing="0" 
+            border="0" 
+            align="center" 
+            class="device-width darkmode-footer">
+            <tbody>
+              <tr>
+                <td height="30" style="line-height: 30px; font-size: 30px;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td 
+                  align="center" 
+                  valign="center">
+                  <p 
+                    class="email-footer-follow-us"
+                    style="margin: 0; padding: 0; text-transform: uppercase; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: bold; font-size: 14px; line-height: 28px; color: #ffffff;">
+                    <singleline label="follow-us">Follow us</singleline>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td height="10" style="font-size: 10px; line-height: 10px;">
+                  &nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td 
+                  align="center" 
+                  valign="center">
+                  <p 
+                    class="email-footer-address"
+                    style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: 400; font-size: 10px; line-height: 24px; color: #ffffff;">
+                    <singleline label="footer-address">Averment Digital Ltd, 1st Floor East Suite, Shipley, BD17 7EZ</singleline>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td 
+                  align="center" 
+                  valign="center">
+                  <p 
+                    class="email-footer-address"
+                    style="margin: 0; padding: 0; font-family: Gilroy, Helvetica Neue, sans-serif; font-weight: 400; font-size: 10px; line-height: 24px; color: #ffffff;">
+                    <a href="tel:01274028701">01274 028701</a> | <a href="mailto:contact@averment.digital">contact@averment.digital</a> | <unsubscribe>Unsubscribe</unsubscribe>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td height="10" style="font-size: 10px; line-height: 10px;">
+                  &nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table style="width: 100% !important; max-width: 120px !important;"
+                    width="120" 
+                    cellpadding="10" 
+                    cellspacing="0" 
+                    border="0" 
+                    align="center"
+                    valign="top">
+                    <tbody>
+                      <tr>
+                        <td 
+                          align="center" 
+                          valign="top">
+                          <a target="_blank" href="https://www.instagram.com/avermentdigital/" style="text-decoration: none;">
+                            <img 
+                              src="images/instagram-light.png" 
+                              width="20" 
+                              border="0"
+                              alt="Follow Averment on Instagram" 
+                              style="display:block; border:none; outline:none; text-decoration:none; width: 20px !important;"
+                              class="light-img" 
+                            />
+                            <!--[if !mso]><! -->
+                                <img 
+                                width="20" 
+                                alt="Follow Averment on Instagram" 
+                                border="0"
+                                style="display:none; border:none; outline:none; text-decoration:none; width: 20px !important;" 
+                                src="images/instagram-dark.png"
+                                class="dark-img" /> 
+                            <!--<![endif]-->
+                          </a>
+                        </td>
+                        <td 
+                          align="center" 
+                          valign="top">
+                          <a target="_blank" href="https://www.facebook.com/AvermentDigital" style="text-decoration: none";>
+                            <img 
+                              src="images/facebook-light.png" 
+                              width="11" 
+                              alt="Follow Averment on Facebook" 
+                              style="display:block; border:none; outline:none; text-decoration:none; width: 11px !important;"
+                              class="light-img" 
+                            />
+                            <!--[if !mso]><! -->
+                            <img 
+                              width="11" 
+                              alt="Follow Averment on Facebook" 
+                              border="0"
+                              style="display:none; border:none; outline:none; text-decoration:none; width: 11px !important;" 
+                              src="images/facebook-dark.png"
+                              class="dark-img" /> 
+                            <!--<![endif]-->
+                          </a>
+                        </td>
+                        <td 
+                          align="center" 
+                          valign="top">
+                          <a target="_blank" href="https://twitter.com/AvermentDigital" style="text-decoration: none;">
+                            <img 
+                              src="images/twitter-light.png"
+                              width="25" 
+                              alt="Follow Averment on Twitter" 
+                              style="display:block; border:none; outline:none; text-decoration:none; width: 25px !important;"
+                              class="light-img"
+                            />
+                            <!--[if !mso]><! -->
+                            <img 
+                              width="25" 
+                              alt="Follow Averment on Twitter" 
+                              border="0"
+                              style="display:none; border:none; outline:none; text-decoration:none; width: 25px !important;" 
+                              src="images/twitter-dark.png"
+                              class="dark-img" /> 
+                            <!--<![endif]-->
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td height="30" style="line-height: 30px; font-size: 30px;">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
